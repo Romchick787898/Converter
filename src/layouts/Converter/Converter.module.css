@@ -1,0 +1,104 @@
+.menu_currency{
+    width: 100%;
+    background: white;
+    border: 1px solid rgb(196, 196, 196);
+    box-sizing: border-box;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.menu_currency::-webkit-scrollbar{
+    height: 1px;
+    background: white;
+}
+
+.menu_currency::-webkit-scrollbar-thumb{
+    background: rgb(53, 53, 53);
+    width: 1px;
+}
+
+.menu_currency > li {
+    min-width: 80px;
+    box-sizing: content-box;
+    list-style: none;
+    border-right: 1px solid rgb(196, 196, 196);
+    text-align: center;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_currency > li > label {
+    cursor: pointer;
+}
+
+.btn_currency{
+    cursor: pointer;
+    box-sizing: content-box;
+    appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 30px;
+}
+
+.btn_currency::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    color: white;
+    border-radius: 30px;
+}
+
+.btn_currency:checked::after{
+  width: 15px;
+  height: 15px;
+  background: brown;
+}
+
+.container{
+    max-width: 70%;
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 1fr 25px;
+    gap: 30px;
+}
+
+.inp_currency{
+    outline: none;
+    border: 1px solid rgb(196, 196, 196);
+    font-size: 3em;
+    box-sizing: border-box;
+    padding: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.inp_currency::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: none; 
+  opacity: 0; 
+  pointer-events: none; 
+}
+
+span {
+    color: gray;
+    font-size: 20px;
+}
+
+time {
+    font-size: 20px;
+    color: brown;
+}
